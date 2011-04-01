@@ -1,0 +1,2215 @@
+<ui version="4.0" >
+ <author>Stefan Klumpp</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1265</width>
+    <height>947</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle" >
+   <string>VW ERL :: Data Analyzer</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>images/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="QFrame" name="frameData" >
+    <property name="enabled" >
+     <bool>false</bool>
+    </property>
+    <property name="geometry" >
+     <rect>
+      <x>0</x>
+      <y>340</y>
+      <width>590</width>
+      <height>570</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QGroupBox" name="groupBoxBremse3" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>141</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>Wheelspeed</string>
+     </property>
+     <widget class="QLineEdit" name="speed_FL" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="speed_FR" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="speed_RL" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>90</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="speed_RR" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>110</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>FR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>FL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>RL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>RR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>km/h</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>70</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>km/h</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>90</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>km/h</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>110</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>km/h</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Car</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="speed_car" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>km/h</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxBrake" >
+     <property name="geometry" >
+      <rect>
+       <x>160</x>
+       <y>10</y>
+       <width>250</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>Brake and ESP</string>
+     </property>
+     <widget class="QLabel" name="label_14" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Yaw rate:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="yaw" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15" >
+      <property name="geometry" >
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>degree/sec</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Brake pressure:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="brake" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>80</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17" >
+      <property name="geometry" >
+       <rect>
+        <x>180</x>
+        <y>80</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>bar</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxESP" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>81</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>ESP status </string>
+      </property>
+      <property name="checkable" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11" >
+      <property name="geometry" >
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>G</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lateral" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>100</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Lateral acceleration:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="MotorCurrent" >
+      <property name="geometry" >
+       <rect>
+        <x>180</x>
+        <y>110</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32" >
+      <property name="geometry" >
+       <rect>
+        <x>100</x>
+        <y>110</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Motor Current</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxSuspension" >
+     <property name="geometry" >
+      <rect>
+       <x>420</x>
+       <y>90</y>
+       <width>140</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>Suspension deflection</string>
+     </property>
+     <widget class="QLineEdit" name="Front" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Rear" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>40</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Rear</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>40</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Front</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>mm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31" >
+      <property name="geometry" >
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>mm</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMisc" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>350</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>Misc</string>
+     </property>
+     <widget class="QLineEdit" name="ClutchStiffness" >
+      <property name="geometry" >
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_38" >
+      <property name="geometry" >
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>210</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Desired center differential clutch stiffness</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_39" >
+      <property name="geometry" >
+       <rect>
+        <x>310</x>
+        <y>50</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40" >
+      <property name="geometry" >
+       <rect>
+        <x>310</x>
+        <y>80</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_41" >
+      <property name="geometry" >
+       <rect>
+        <x>310</x>
+        <y>20</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_42" >
+      <property name="geometry" >
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>180</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Actual center differential clutch value</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ClutchValue" >
+      <property name="geometry" >
+       <rect>
+        <x>240</x>
+        <y>80</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_43" >
+      <property name="geometry" >
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>190</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Demanded steering torque from ESP</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SteeringTorque" >
+      <property name="geometry" >
+       <rect>
+        <x>240</x>
+        <y>50</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxSteering" >
+     <property name="geometry" >
+      <rect>
+       <x>420</x>
+       <y>10</y>
+       <width>161</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>Steering</string>
+     </property>
+     <widget class="QLabel" name="label_34" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Torque</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Torque" >
+      <property name="geometry" >
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35" >
+      <property name="geometry" >
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>30</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>40</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Angle</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Angle" >
+      <property name="geometry" >
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37" >
+      <property name="geometry" >
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>40</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>degree</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxEngine" >
+     <property name="geometry" >
+      <rect>
+       <x>370</x>
+       <y>180</y>
+       <width>210</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>Engine</string>
+     </property>
+     <widget class="QLabel" name="label_44" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Internal torque</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="IntTorque" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_45" >
+      <property name="geometry" >
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>40</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>% MDI</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_46" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Torque loss</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TorqueLoss" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_47" >
+      <property name="geometry" >
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>40</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>% MDI</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox501" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>371</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>0x501</string>
+     </property>
+     <widget class="QLineEdit" name="ddl_timestamp" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21" >
+      <property name="geometry" >
+       <rect>
+        <x>150</x>
+        <y>20</y>
+        <width>23</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>sec</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Timestamp:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="led_status" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>LED status:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24" >
+      <property name="geometry" >
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>120</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Simulink model version:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="model_version" >
+      <property name="geometry" >
+       <rect>
+        <x>300</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25" >
+      <property name="geometry" >
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Save date:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="save_date" >
+      <property name="geometry" >
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox502" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>360</y>
+       <width>260</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>0x502</string>
+     </property>
+     <widget class="QLineEdit" name="yawAngle" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string/>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_50" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>yawAngle:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rollAngle" >
+      <property name="geometry" >
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_51" >
+      <property name="geometry" >
+       <rect>
+        <x>140</x>
+        <y>20</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>rollAngle:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_52" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>yawRate:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="yawRate" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_53" >
+      <property name="geometry" >
+       <rect>
+        <x>140</x>
+        <y>50</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>rollRate:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rollRate" >
+      <property name="geometry" >
+       <rect>
+        <x>190</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox503" >
+     <property name="geometry" >
+      <rect>
+       <x>280</x>
+       <y>360</y>
+       <width>230</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>0x503</string>
+     </property>
+     <widget class="QLineEdit" name="vx" >
+      <property name="geometry" >
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string/>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_54" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>vx:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="vyCG" >
+      <property name="geometry" >
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_55" >
+      <property name="geometry" >
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>30</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>vyCG:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_56" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>30</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>axCG:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="axCG" >
+      <property name="geometry" >
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_57" >
+      <property name="geometry" >
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>30</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>ayCG:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ayCG" >
+      <property name="geometry" >
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox504" >
+     <property name="geometry" >
+      <rect>
+       <x>390</x>
+       <y>270</y>
+       <width>120</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>0x504</string>
+     </property>
+     <widget class="QLineEdit" name="PosE" >
+      <property name="geometry" >
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string/>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_58" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>PosE:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_60" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>30</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>PosN:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PosN" >
+      <property name="geometry" >
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox505" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>450</y>
+       <width>150</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>0x505</string>
+     </property>
+     <widget class="QLineEdit" name="sideslip" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string/>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_64" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>sideslip:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_66" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>rawIpitch:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rawIpitch" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_67" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>rawIaz:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rawIaz" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>80</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox506" >
+     <property name="geometry" >
+      <rect>
+       <x>170</x>
+       <y>450</y>
+       <width>340</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>0x506</string>
+     </property>
+     <widget class="QLineEdit" name="LFDuration" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string/>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_65" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>LFDuration:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_68" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>LRDuration:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LRDuration" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_69" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>LeftTieRod:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeftTieRod" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>80</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_70" >
+      <property name="geometry" >
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>RFDuration:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="RRDuration" >
+      <property name="geometry" >
+       <rect>
+        <x>260</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="RightTieRod" >
+      <property name="geometry" >
+       <rect>
+        <x>260</x>
+        <y>80</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_71" >
+      <property name="geometry" >
+       <rect>
+        <x>190</x>
+        <y>50</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>RRDuration:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="RFDuration" >
+      <property name="geometry" >
+       <rect>
+        <x>260</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string/>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_72" >
+      <property name="geometry" >
+       <rect>
+        <x>190</x>
+        <y>80</y>
+        <width>70</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>RightTieRod:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="framePlot" >
+    <property name="enabled" >
+     <bool>false</bool>
+    </property>
+    <property name="geometry" >
+     <rect>
+      <x>600</x>
+      <y>10</y>
+      <width>660</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QComboBox" name="comboSelectData" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>360</y>
+       <width>231</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text" >
+       <string>ESP status (active)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Suspension deflection (front)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Suspension deflection (rear)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Desired center differential clutch stiffness</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Actual center differential clutch value</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>MotorCurrent</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Car speed</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Wheelspeed FL</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Wheelspeed FR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Wheelspeed RL</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Wheelspeed RR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Lateral acceleration</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Brake pressure</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Yaw rate</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Steering torque</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Steering angle</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Demanded steering torque from ESP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Internal torque (engine)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Torque loss (engine)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: yawAngle</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: yawRate</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: rollAngle</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: rollRate</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: vx</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: axCG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: vyCG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: ayCG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: posE</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: posN</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: sideslip</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: rawIpitch</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: rawIaz</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: LRDuration</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: RRDuration</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: LFDuration</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: RFDuration</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: LeftTieRod</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>DDL: RightTieRod</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frameImage" >
+    <property name="enabled" >
+     <bool>true</bool>
+    </property>
+    <property name="geometry" >
+     <rect>
+      <x>600</x>
+      <y>410</y>
+      <width>660</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="labelFrame" >
+     <property name="enabled" >
+      <bool>true</bool>
+     </property>
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>640</width>
+       <height>480</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="pixmap" >
+      <pixmap/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frameControl" >
+    <property name="geometry" >
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>590</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="ButtonQuit" >
+     <property name="geometry" >
+      <rect>
+       <x>500</x>
+       <y>190</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Quit</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxDataFile" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>570</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>CAN Data File</string>
+     </property>
+     <widget class="QLineEdit" name="lineEditFile" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>550</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>(No file selected)</string>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ButtonLoadFile" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>100</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Load Data File</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxVideo" >
+     <property name="enabled" >
+      <bool>false</bool>
+     </property>
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>570</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>Video File</string>
+     </property>
+     <widget class="QLineEdit" name="lineEditVideo" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>550</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>(No file selected)</string>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ButtonEnableVideo" >
+      <property name="enabled" >
+       <bool>false</bool>
+      </property>
+      <property name="geometry" >
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>100</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Enable Video</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ButtonDisableVideo" >
+      <property name="enabled" >
+       <bool>false</bool>
+      </property>
+      <property name="geometry" >
+       <rect>
+        <x>230</x>
+        <y>50</y>
+        <width>100</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Disable Video</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ButtonLoadVideo" >
+      <property name="enabled" >
+       <bool>false</bool>
+      </property>
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>100</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Load Video File</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonPause" >
+      <property name="enabled" >
+       <bool>false</bool>
+      </property>
+      <property name="geometry" >
+       <rect>
+        <x>440</x>
+        <y>50</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Pause</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonPlay" >
+      <property name="enabled" >
+       <bool>false</bool>
+      </property>
+      <property name="geometry" >
+       <rect>
+        <x>360</x>
+        <y>50</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Play</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="InfoButton" >
+     <property name="geometry" >
+      <rect>
+       <x>420</x>
+       <y>190</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Info</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frameSelect" >
+    <property name="enabled" >
+     <bool>true</bool>
+    </property>
+    <property name="geometry" >
+     <rect>
+      <x>0</x>
+      <y>250</y>
+      <width>590</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>46</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt; font-weight:600;">Frame:&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="timestampBox" >
+     <property name="geometry" >
+      <rect>
+       <x>350</x>
+       <y>20</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>0</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12" >
+     <property name="geometry" >
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>46</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt; font-weight:600;">Time:&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="timeBox" >
+     <property name="geometry" >
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>00:00:00</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBoxFrame" >
+     <property name="geometry" >
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>80</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="accelerated" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>570</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18" >
+     <property name="geometry" >
+      <rect>
+       <x>440</x>
+       <y>20</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>ms</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13" >
+     <property name="geometry" >
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Timestamp:&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="diffBox" >
+     <property name="geometry" >
+      <rect>
+       <x>500</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>0</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20" >
+     <property name="geometry" >
+      <rect>
+       <x>470</x>
+       <y>20</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Diff:&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19" >
+     <property name="geometry" >
+      <rect>
+       <x>570</x>
+       <y>20</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>ms</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1265</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ButtonQuit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>555</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>557</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
